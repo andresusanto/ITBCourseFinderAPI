@@ -1,3 +1,7 @@
+// ITB COURSE FINDER API
+// TUGAS 1 - PPL SERVICE
+// ANDRE SUSANTO - 13512028
+
 var https = require('https');
 
 module.exports = {
