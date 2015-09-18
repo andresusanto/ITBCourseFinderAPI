@@ -62,7 +62,7 @@ module.exports = {
 	},
 	
 	httpGetAkademik: function (url, callback){
-		console.log('Create : https://six.akademik.itb.ac.id/publik/' + url);
+		console.log('Creating Request To : https://six.akademik.itb.ac.id/publik/' + url);
 		https.get('https://six.akademik.itb.ac.id/publik/' + url ,function (res) {
 			var str = '';
 			
@@ -96,7 +96,6 @@ module.exports = {
 				if (hasilRegex == null)
 					callback(null);
 				else{
-					console.log(hasilRegex[1]);
 					httpGetAkademik('displaydpk.php?p=' + hasilRegex[1], function (dpk){
 						var peserta_kelas = [];
 						var regexDataKelas = /([\w ]+)\nProgram Studi\t\t: ([\w ]+)\n.+\n\nKode\/Mata Kuliah\t: [\w]+ \/ (.+), (\d) SKS\nNo\. Kelas\/Dosen\t\t: \d\d \/ ([\w ]+)\n[\w\W]+Total Peserta = ([\d]+)\n/i;
