@@ -15,4 +15,5 @@ node akademik.js
 
 ## Result
 ![ITB Course Finder API Result](/../screenshoot/screenshoots/result.jpg?raw=true "ITB Course Finder API Result")
+
 The datasheet that is used for JSON output can be found in: https://www.dropbox.com/s/40rrzscor0p4qsy/JSON.md?dl=0
